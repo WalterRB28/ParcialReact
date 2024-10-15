@@ -7,7 +7,7 @@
 
 body {
   background-repeat: repeat;
-  background-image: url(../img/patron.png);
+  background-image: url(/src/assets/Decorations/patron.png);
 }
 
 :root {
@@ -107,6 +107,45 @@ input[type="submit"]:hover {
 .process h2{
   font-family: Constantia, 'Times New Roman', Courier, monospace;
   margin: 0.5em;
+}
+
+.review-container {
+  display: flex;
+  align-items: center;
+  border-radius: 1em;
+  justify-content: center;
+  position: relative;
+  width: 85%;
+  margin: 1em auto;
+  overflow: hidden;
+}
+
+.review-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.prev, .next {
+  background-color: var(--darkgreen);
+  border: none;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  border-radius: 0;
+  z-index: 2;
+}
+
+.prev {
+  left: 0;
+  bottom: 0;
+  width: 50%;
+}
+
+.next {
+  right: 0;
+  bottom: 0;
+  width: 50%;
 }
 
 @media (min-width: 768px) {

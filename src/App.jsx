@@ -5,6 +5,7 @@ import data from './data/dataPage.js';
 import Category from './components/menu/Category.jsx';
 import Benefits from './components/Carrousel/Benefits.jsx';
 import Process from './components/Process/Process.jsx';
+import Review from './components/Reviews/Review.jsx';
 
 function App() {
   // Código para hacer el menú fijo
@@ -24,6 +25,7 @@ function App() {
     };
   }, []);
 
+  // Codigo para el carrousel de beneficios
   useEffect(() => {
     const cards = document.querySelectorAll('.card-benefits');
     let currentIndex = 0;
@@ -53,6 +55,39 @@ function App() {
 
     setInterval(nextCard, 10000);
   }, []);
+
+  // Codigo para pasar las reviews con los botones
+  useEffect(() => {
+    const reviews = document.querySelectorAll('.review');
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
+    const reviewWrapper = document.querySelector('.review-wrapper');
+    let currentIndexReview = 0;
+
+    function showReview(index) {
+      if (index >= reviews.length) {
+        currentIndexReview = 0;
+      } else if (index < 0) {
+        currentIndexReview = reviews.length - 1;
+      } else {
+        currentIndexReview = index;
+      }
+
+      reviewWrapper.style.transform = `translateX(-${currentIndexReview * 100}%)`;
+    }
+
+    prevButton.addEventListener('click', () => {
+      showReview(currentIndexReview - 1);
+    });
+
+    nextButton.addEventListener('click', () => {
+      showReview(currentIndexReview + 1);
+    });
+
+    showReview(currentIndexReview);
+  }, []);
+
+  
 
   return (
     <>
@@ -102,6 +137,24 @@ function App() {
         {data.processInformation.map((processInfo, index) => (
           <Process key={index} processInformation={processInfo} />
         ))}
+      </section>
+
+      <h2 class="header-productos">Algunos de nuestros <i class="word">testimonios</i>.</h2>
+      <section class="review-container">
+        <button class="prev">‹</button>
+        <div class="review-wrapper">
+          {data.reviews.map((reviews, index) => (
+            <Review
+              key={index}
+              titleReview={reviews.titleReview}
+              descReview={reviews.descReview}
+              pfpImage={reviews.pfpImage}
+              userName={reviews.userName}
+              score={reviews.score}
+            />
+          ))}
+        </div>
+        <button class="next">›</button>
       </section>
     </>
   );

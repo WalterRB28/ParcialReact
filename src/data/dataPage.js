@@ -10,6 +10,11 @@ import luxuryNail from '../assets/Products/luxuryNail.png'
 import qualityNail from '../assets/Products/qualityNail.png'
 import brownStroke  from '../assets/Decorations/brownStroke.png'
 
+import pfpOne from '../assets/Pfp/pfpOne.png'
+import pfpTwo from '../assets/Pfp/pfpTwo.png'
+import pfpThree from '../assets/Pfp/pfpThree.png'
+import pfpFour from '../assets/Pfp/pfpFour.png'
+
 // Informacion para las tarjetas de resumen
 const cardsData = [
     {
@@ -106,4 +111,35 @@ const processInformation = [
     }
 ];
 
-export default { cardsData, menuLista, benefits, processInformation };
+const reviews = [
+    {
+        titleReview: 'Productos de calidad',
+        descReview: 'Hace unos dias, me empezaron se me empezo a enterrar la uña del pie, mi amigo me recomendo esta pagina y ordene el set de lujo, muy satisfecho.',
+        pfpImage: pfpOne,
+        userName: 'Dudúa-Moai',
+        score: '5',
+    },
+    {
+        titleReview: 'Mi perico lo adora!!!',
+        descReview: 'Encontre esta pagina en "X", y me intereso pues mi perico tiene ya largas sus uñas, cuando empeze a ocupar el cortauñas, era como cortar mantequilla!!!',
+        pfpImage: pfpFour,
+        userName: 'Cipitiyo503',
+        score: '4',
+    },
+    {
+        titleReview: 'Super comodo de usar',
+        descReview: 'Yo pedi el cortauñas con lupa, pues mi vista ya no es como antes..., cuando lo saque de la caja, todo estaba perfecto! de inmediato me puse a ocuparlo, y se sentia muy natural! Gracias Nailed-It!!!!',
+        pfpImage: pfpTwo,
+        userName: 'thelostlegend09',
+        score: '5',
+    },
+    {
+        titleReview: 'Eficacia en recien nacidos',
+        descReview: 'Compre un cortauña pequeño para mi hijo de 5 meses, el cortauñas que me enviaron era super bonito, y se sentia de una forma muy liviana, y facil de usar, normalmente mi hijo odia cortarse las uñas, pero con este no sintio nada!!!',
+        pfpImage: pfpThree,
+        userName: 'patitojuan2',
+        score: '5',
+    },
+]
+
+export default { cardsData, menuLista, benefits, processInformation, reviews };
