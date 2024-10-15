@@ -10,9 +10,7 @@ import luxuryNail from '../assets/Products/luxuryNail.png'
 import qualityNail from '../assets/Products/qualityNail.png'
 import brownStroke  from '../assets/Decorations/brownStroke.png'
 
-
-
-
+// Informacion para las tarjetas de resumen
 const cardsData = [
     {
       imagen: imagenPerroPromo,
@@ -31,6 +29,7 @@ const cardsData = [
     },
 ];
 
+// SubMenu para el navBar
 const menuLista = [
     {
         name: 'Inicio',
@@ -59,6 +58,7 @@ const menuLista = [
     },
 ];
 
+// Lista de beneficios para el carrousel
 const benefits = [
     {
         imagenBeneficio: imagenBeneficio1,
@@ -80,6 +80,7 @@ const benefits = [
     },
 ]
 
+// Objetos para el "proceso" de informacion de cada uno
 const processInformation = [
     {
         imageProduct: luxuryNail,
