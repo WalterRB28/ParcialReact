@@ -1,0 +1,141 @@
+.nav-main {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--lightgreen);
+  box-shadow: 0px 0px 10px #2d331a;
+}
+
+.nav-main h1 {
+  color: black;
+  font-size: 2em;
+  text-align: center;
+  padding: 0.5em;
+  font-family: Constantia, "Times New Roman", Courier, monospace;
+  color: white;
+}
+
+.nav-main ul {
+  list-style: none;
+}
+
+.nav-main .nav-main-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-main .nav-main-menu li {
+  width: 100%;
+}
+
+.nav-main .nav-main-menu li a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  color: black;
+  padding: 0.75em;
+  transition: 0.2s;
+  border-radius: 0.5em;
+  color: white;
+}
+
+.nav-main .nav-main-menu li a:hover {
+  background-color: #384b22;
+}
+
+.nav-main .nav-main-submenu {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: 1s;
+}
+
+.nav-main-menu li:hover > .nav-main-submenu {
+  opacity: 1;
+  max-height: 15em;
+}
+
+.nav-main-menu li:hover > .nav-main-submenu li a:hover {
+  background-color: #384b22;
+}
+/* Esto mostrara el menu con los tres "-", y motrara el nav para la pagina */
+@media (max-width: 767px) {
+  .list-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    width: 40vw;
+    height: 100vh;
+
+    background-color: var(--lightgreen);
+    box-shadow: 0px 0px 10px #2d331a;
+
+    transform: translateX(500px);
+    transition: transform 0.5s ease;
+    overflow-y: auto;
+    z-index: 5;
+  }
+
+  .nav-main-menu li {
+    margin-bottom: 0.5em;
+    width: 100%;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}
+
+.list-container.active {
+  transform: translateX(0);
+}
+
+
+@media (min-width: 768px) {
+  .list-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-main {
+    position: relative;
+    flex-direction: row;
+  }
+
+  .nav-main h1 {
+    margin-right: auto;
+  }
+
+  .nav-main .nav-main-menu {
+    flex-direction: row;
+}
+
+  .nav-main .nav-main-menu li{
+    position: relative;
+  }
+
+  .nav-main .nav-main-menu li a{
+    width: 7.5em;
+    background-color: #606C38;
+    border-radius: 0em;
+
+  }
+
+  .nav-main .nav-main-submenu{
+    position: absolute;
+    top: 100%;
+    left: 0; 
+    z-index: 1;
+    transition: 0.5s;
+  }
+}

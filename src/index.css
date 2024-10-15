@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-repeat: repeat;
+  background-image: url(../img/patron.png);
+}
+
+:root {
+  box-sizing: border-box;
+  --darkgreen: #283618;
+  --lightgreen: #606c38;
+  --white: #fefae0;
+  --lightbrown: #dda15e;
+  --brown: #bc6c25;
+}
+
+button,
+input[type="submit"] {
+  font-weight: bold;
+  border-radius: 0.5em;
+  border: 1px solid black;
+  align-self: center;
+  width: 27vw;
+  padding: 0.75em 0em;
+  transition: 0.75s;
+  background-color: #fefae0;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  color: lightgray;
+  transform: scale(1.1);
+  background-color: var(--brown);
+  box-shadow: 0px 0px 5px gray;
+}
+
+.word{
+  font-weight: bold;
+  background: linear-gradient(90deg, red, #0000ff, red);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradientAnimationWord 10s infinite;
+}
+
+@keyframes gradientAnimationWord { 
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100%{
+    background-position: 0% 0%;
+  }
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+  background-image: url(../src/assets/Decorations/lightbrownStroke.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 1em;
+}
+
+.products h2 {
+  margin: 0.5em;
+  color: black;
+  text-align: center;
+  font-family: Constantia, "Times New Roman", Courier, monospace;
+  font-size: 7.5vw;
+}
+
+.header-productos{
+  font-family: Constantia, 'Times New Roman', Courier, monospace;
+  text-align: center;
+  font-size: 7.5vw;
+}
+
+
+.benefits{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+
+@media (min-width: 768px) {
+  #nav-fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+  }
+
+  .nav-toggle{
+    display: none !important;
+  }
+
+  .card-benefits {
+    flex-direction: row;
+    width: 80vw;
+  }
+
+  .products {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5em;
+  }
+
+  .products h2 {
+    margin: 0.5em;
+    font-size: 5vw;
+    text-align: center;
+    font-family: Constantia, "Times New Roman", Courier, monospace;
+  }
+
+  .product-image {
+    flex-wrap: wrap;
+    width: 20vw;
+  }
+
+  .product-information p {
+    font-size: 14px;
+  }
+
+  button,
+  input[type="submit"] {
+    width: 7em;
+    margin-top: 0.5em;
+  }
+
+  .header-productos {
+    font-size: 3vw;
+  }
+}
