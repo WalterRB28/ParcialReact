@@ -97,6 +97,17 @@ input[type="submit"]:hover {
   overflow: hidden;
 }
 
+.process {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.process h2{
+  font-family: Constantia, 'Times New Roman', Courier, monospace;
+  margin: 0.5em;
+}
 
 @media (min-width: 768px) {
   #nav-fixed{
@@ -147,5 +158,19 @@ input[type="submit"]:hover {
 
   .header-productos {
     font-size: 3vw;
+  }
+
+  .process {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 930px) {
+  .process {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 }

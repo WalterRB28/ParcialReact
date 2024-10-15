@@ -4,6 +4,7 @@ import Card from './components/Card/Card';
 import data from './data/dataPage.js';
 import Category from './components/menu/Category.jsx';
 import Benefits from './components/Carrousel/Benefits.jsx';
+import Process from './components/Process/Process.jsx';
 
 function App() {
   // Código para hacer el menú fijo
@@ -93,6 +94,13 @@ function App() {
             titulo={benefits.titulo}
             descripcion={benefits.descripcion}
           />
+        ))}
+      </section>
+
+      <h2 className="header-productos">¿Qué nos <i className="word">diferencia</i>?</h2>
+      <section className="process">
+        {data.processInformation.map((processInfo, index) => (
+          <Process key={index} processInformation={processInfo} />
         ))}
       </section>
     </>

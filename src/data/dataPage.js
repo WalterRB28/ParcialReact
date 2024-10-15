@@ -1,9 +1,15 @@
 import imagenGatoPromo from '../assets/Products/catNailCutter.png';
 import imagenPerroPromo from '../assets/Products/dogNailCutter.png';
 import imagenHumanoPromo from '../assets/Products/humanNailCutter.png';
+
 import imagenBeneficio1 from '../assets/Benefits/beneficioUno.png'
 import imagenBeneficio2 from '../assets/Benefits/beneficioDos.png'
 import imagenBeneficio3 from '../assets/Benefits/beneficioTres.png'
+
+import luxuryNail from '../assets/Products/luxuryNail.png'
+import qualityNail from '../assets/Products/qualityNail.png'
+import brownStroke  from '../assets/Decorations/brownStroke.png'
+
 
 
 
@@ -74,4 +80,29 @@ const benefits = [
     },
 ]
 
-export default { cardsData, menuLista, benefits };
+const processInformation = [
+    {
+        imageProduct: luxuryNail,
+        imageDecoration: brownStroke,
+        altTextProduct: 'Cortauñas premium',
+        infoProduct: 'Set personal de cortauñas de lujo, 8 piezas, rojo y negro',
+        tituloProcess: 'Un pequeño lujo para tus uñas',
+        parrafos: [
+            'Nuestros modelos ofrecen características para adaptarse a las preferencias individuales del usuario, como mecanismos para ajustar el ángulo del corte.',
+            'Presentan acabados de lujo, como detalles en oro o plata, grabados personalizados, y diseños estilizados que elevan el producto a un artículo de lujo.'
+        ]
+    },
+    {
+        imageProduct: qualityNail,
+        imageDecoration: brownStroke,
+        altTextProduct: 'Cortauñas premium',
+        infoProduct: 'Corta-uñas de lujo con lupa de The First Years',
+        tituloProcess: 'Alta calidad en cada producto',
+        parrafos: [
+            'Fabricado con materiales duraderos, como acero inoxidable, lo que garantiza una larga vida útil sin oxidación ni desgaste rápido.',
+            'Cuchillas afiladas y bien diseñadas permiten un corte limpio y preciso, evitando bordes irregulares o roturas en las uñas.'
+        ]
+    }
+];
+
+export default { cardsData, menuLista, benefits, processInformation };
