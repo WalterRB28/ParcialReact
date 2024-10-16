@@ -1,0 +1,77 @@
+.form-update {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+    background-image: url(../../assets/Decorations/cortaUñas.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+.form-update h3 {
+    text-align: center;
+    margin: 0.25em;
+    font-size: 1.5em;
+}
+
+.actual-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0em 1em;
+}
+
+.bad-response {
+    display: none;
+    color: red;
+    text-shadow: darkred;
+}
+
+.form-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5em;
+    margin-bottom: 1em;
+}
+
+input[type="text"] {
+    border-radius: 0.5em;
+    background-color: white;
+    border: 1px solid gray;
+    box-shadow: inset lightgrey 0px 5px 5px;
+    margin: 0.25em;
+    padding: 0.75em 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input[type="email"] {
+    border-radius: 0.5em;
+    background-color: white;
+    border: 1px solid gray;
+    box-shadow: inset lightgrey 0px 5px 5px;
+    margin: 0.25em;
+    padding: 0.75em 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input[type="number"] {
+    border-radius: 0.5em;
+    background-color: white;
+    border: 1px solid gray;
+    box-shadow: inset lightgrey 0px 5px 5px;
+    margin: 0.25em;
+    padding: 0.75em 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.button-send {
+    background-color: var(--lightgreen);
+}
+
+input[type="submit"]:hover {
+    background-color: var(--darkgreen);
+}
