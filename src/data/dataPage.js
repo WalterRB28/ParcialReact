@@ -2,18 +2,18 @@ import imagenGatoPromo from '../assets/Products/catNailCutter.png';
 import imagenPerroPromo from '../assets/Products/dogNailCutter.png';
 import imagenHumanoPromo from '../assets/Products/humanNailCutter.png';
 
-import imagenBeneficio1 from '../assets/Benefits/beneficioUno.png'
-import imagenBeneficio2 from '../assets/Benefits/beneficioDos.png'
-import imagenBeneficio3 from '../assets/Benefits/beneficioTres.png'
+import imagenBeneficio1 from '../assets/Benefits/beneficioUno.png';
+import imagenBeneficio2 from '../assets/Benefits/beneficioDos.png';
+import imagenBeneficio3 from '../assets/Benefits/beneficioTres.png';
 
-import luxuryNail from '../assets/Products/luxuryNail.png'
-import qualityNail from '../assets/Products/qualityNail.png'
-import brownStroke  from '../assets/Decorations/brownStroke.png'
+import luxuryNail from '../assets/Products/luxuryNail.png';
+import qualityNail from '../assets/Products/qualityNail.png';
+import brownStroke  from '../assets/Decorations/brownStroke.png';
 
-import pfpOne from '../assets/Pfp/pfpOne.png'
-import pfpTwo from '../assets/Pfp/pfpTwo.png'
-import pfpThree from '../assets/Pfp/pfpThree.png'
-import pfpFour from '../assets/Pfp/pfpFour.png'
+import pfpOne from '../assets/Pfp/pfpOne.png';
+import pfpTwo from '../assets/Pfp/pfpTwo.png';
+import pfpThree from '../assets/Pfp/pfpThree.png';
+import pfpFour from '../assets/Pfp/pfpFour.png';
 
 // Informacion para las tarjetas de resumen
 const cardsData = [
@@ -43,10 +43,10 @@ const menuLista = [
     {
         name: 'Cortauñas',
         sublista: [
-            { name: 'Bebe', sublista: [] },
-            { name: 'Adulto', sublista: [] },
-            { name: 'Perro', sublista: [] },
-            { name: 'Gato', sublista: [] },
+            { name: 'Bebe' },
+            { name: 'Adulto' },
+            { name: 'Perro' },
+            { name: 'Gato' },
       ],
     },
     {
@@ -56,9 +56,9 @@ const menuLista = [
     {
         name: 'Contacto',
         sublista: [
-            { name: 'WhatsApp', sublista: [] },
-            { name: 'Facebook', sublista: [] },
-            { name: 'Instagram', sublista: [] },
+            { name: 'WhatsApp' },
+            { name: 'Facebook' },
+            { name: 'Instagram' },
         ],
     },
 ];
@@ -111,6 +111,7 @@ const processInformation = [
     }
 ];
 
+// Informacion de los reviews
 const reviews = [
     {
         titleReview: 'Productos de calidad',

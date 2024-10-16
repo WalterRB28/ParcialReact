@@ -6,6 +6,8 @@ import Category from './components/menu/Category.jsx';
 import Benefits from './components/Carrousel/Benefits.jsx';
 import Process from './components/Process/Process.jsx';
 import Review from './components/Reviews/Review.jsx';
+import imagenFinal from './assets/Products/productoFinal.png';
+
 
 function App() {
   // Código para hacer el menú fijo
@@ -87,7 +89,7 @@ function App() {
     showReview(currentIndexReview);
   }, []);
 
-  
+
 
   return (
     <>
@@ -99,16 +101,19 @@ function App() {
             <span id="line-2"></span>
             <span id="line-3"></span>
           </div>
+
           <div className="list-container">
             {data.menuLista.map((category, index) => (
               <Category key={index} category={category} />
             ))}
           </div>
+
         </nav>
       </div>
 
       <section className="products">
         <h2 className='header-productos'>Explora nuestros <i className="word">productos</i>.</h2>
+
         {data.cardsData.map((card, index) => (
           <Card
             key={index}
@@ -117,10 +122,12 @@ function App() {
             productoDesc={card.productoDesc}
           />
         ))}
+
       </section>
 
       <h2 class="header-productos">Descubre los <i class="word">beneficios</i>.</h2>
       <section class="benefits">
+
         {data.benefits.map((benefits, index) => (
           <Benefits
             key={index}
@@ -130,19 +137,23 @@ function App() {
             descripcion={benefits.descripcion}
           />
         ))}
+
       </section>
 
       <h2 className="header-productos">¿Qué nos <i className="word">diferencia</i>?</h2>
       <section className="process">
+
         {data.processInformation.map((processInfo, index) => (
           <Process key={index} processInformation={processInfo} />
         ))}
+
       </section>
 
       <h2 class="header-productos">Algunos de nuestros <i class="word">testimonios</i>.</h2>
       <section class="review-container">
         <button class="prev">‹</button>
         <div class="review-wrapper">
+
           {data.reviews.map((reviews, index) => (
             <Review
               key={index}
@@ -153,9 +164,40 @@ function App() {
               score={reviews.score}
             />
           ))}
+
         </div>
         <button class="next">›</button>
       </section>
+
+      <h2 class="header-productos">¿Quieres obtener uno de nuestros <i class="word">cortauñas</i>?</h2>
+      <section class="others">
+        <article class="info-bottom">
+          <p>
+            Nuestros cortauñas son lideres mundiales, tenemos sucursales por todo el mundo.
+            Al hacer tu primera compra, te enviaremos un cortauñas de regalo para tus
+            mascotas.
+          </p>
+
+          <p>
+            Además nuestro diseño ergonomico es facil de usar, ¡y estos te duraran para toda
+            tu vida!, así que, ¿qué esperas? ¡Ordena uno ya!
+          </p>
+
+          <div class="button-list">
+            <button class="button-modal" id="order-now">¡Ordenar ya!</button>
+          </div>
+        </article>
+
+        <div id="promoImage">
+          <Card
+            imagen={imagenFinal}
+            descImagen='Corta uñas para perros'
+            productoDesc='Nuestros cortauñas para perros tienen la mejor calidad en sus pinzas, permitiendoles un corte facil y rapido.'
+          />
+        </div>
+      </section>
+
+      
     </>
   );
 }
