@@ -9,6 +9,7 @@ import Review from './components/Reviews/Review.jsx';
 import imagenFinal from './assets/Products/productoFinal.png';
 import Modal from './components/Modal/Modal.jsx';
 import Promo from './components/Promo/Promo.jsx';
+import Footer from './components/Footer/Footer.jsx';
 
 
 function App() {
@@ -203,7 +204,7 @@ function App() {
 				</div>
 			</div>
 
-			
+			<Footer/>
 		</>
 	);
 }

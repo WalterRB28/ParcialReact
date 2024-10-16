@@ -1,0 +1,167 @@
+.footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5em;
+  width: 100%;
+}
+
+.brand-footer h2 {
+  font-size: 4em;
+  font-family: Constantia, "Times New Roman", Courier, monospace;
+}
+
+.brand-footer h3 {
+  font-size: 1.75em;
+  margin: 0.5em;
+}
+
+/*Contact*/
+.contact-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border-top: 1px dotted;
+}
+
+.contact-footer h2 {
+  margin-top: 0.5em;
+}
+
+.contact-footer ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0.5em;
+}
+
+.contact-footer ul li {
+  border-radius: 0.25em;
+  padding: 0.25em 0.35em;
+}
+
+.contact-footer ul li img {
+  width: 40px;
+  border-radius: 0.25em;
+  transition: 0.5s;
+}
+
+.contact-footer ul li img:hover {
+  transform: scale(1.1);
+}
+
+/*Products*/
+.products-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border-top: 1px dotted;
+}
+
+.products-footer h2 {
+  margin-top: 0.5em;
+}
+
+.products-footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5em;
+}
+
+.products-footer ul li {
+  padding: 0.25em;
+}
+
+.products-footer ul li a {
+  color: white;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.products-footer ul li a:hover {
+  color: yellow;
+}
+
+/*Info*/
+.info-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border-top: 1px dotted;
+}
+
+.info-footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5em;
+}
+
+.info-footer ul li {
+  margin: 0.5em;
+  padding: 0.25em;
+}
+
+.info-footer ul li a {
+  color: white;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.info-footer ul li a:hover {
+  color: yellow;
+}
+
+.info-footer h2 {
+  margin: 0.5em;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    align-items: unset;
+  }
+
+  .brand-footer {
+    justify-content: center;
+  }
+
+  .brand-footer h2 {
+    font-size: 2.5em;
+  }
+
+  .brand-footer h3 {
+    font-size: 1.2em;
+  }
+
+  .contact-footer {
+    border-top: none;
+  }
+
+  .contact-footer ul li img {
+    margin-top: 1.5em;
+  }
+  .products-footer {
+    border-top: none;
+  }
+
+  .info-footer {
+    border-top: none;
+  }
+}
