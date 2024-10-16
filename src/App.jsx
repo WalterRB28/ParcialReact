@@ -8,6 +8,7 @@ import Process from './components/Process/Process.jsx';
 import Review from './components/Reviews/Review.jsx';
 import imagenFinal from './assets/Products/productoFinal.png';
 import Modal from './components/Modal/Modal.jsx';
+import Promo from './components/Promo/Promo.jsx';
 
 
 function App() {
@@ -192,30 +193,7 @@ function App() {
 
 			<h2 class="header-productos">¿Quieres obtener uno de nuestros <i class="word">cortauñas</i>?</h2>
 			<section class="others">
-				<article class="info-bottom">
-					<p>
-						Nuestros cortauñas son lideres mundiales, tenemos sucursales por todo el mundo.
-						Al hacer tu primera compra, te enviaremos un cortauñas de regalo para tus
-						mascotas.
-					</p>
-
-					<p>
-						Además nuestro diseño ergonomico es facil de usar, ¡y estos te duraran para toda
-						tu vida!, así que, ¿qué esperas? ¡Ordena uno ya!
-					</p>
-
-					<div class="button-list">
-						<button class="button-modal" id="order-now">¡Ordenar ya!</button>
-					</div>
-				</article>
-
-				<div id="promoImage">
-					<Card
-						imagen={imagenFinal}
-						descImagen='Corta uñas para perros'
-						productoDesc='Nuestros cortauñas para perros tienen la mejor calidad en sus pinzas, permitiendoles un corte facil y rapido.'
-					/>
-				</div>
+				<Promo/>
 			</section>
 
 			<div id="myModal" class="modal">
@@ -225,6 +203,7 @@ function App() {
 				</div>
 			</div>
 
+			
 		</>
 	);
 }

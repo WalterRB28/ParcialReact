@@ -1,0 +1,63 @@
+
+.others .info-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+    background-image: url(../src/assets/Decorations/greenStroke.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 1em;
+    padding: 1em;
+  }
+  
+  .info-bottom p {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0.5em;
+    color: black;
+    text-shadow: 0px 0px 5px white;
+    font-weight: bold;
+  }
+  
+  .button-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 85vw;
+  }
+  
+  .button-list button {
+    margin: 0.5em;
+  }
+  
+  #order-now{
+    font-size: 1.5em;
+    width: 25%;
+    height: 12.5%;
+  }
+  
+  
+  .info-bottom p {
+    transition: 0.5s;
+  }
+  
+  #imgContainer{
+    padding: 1em;
+  }
+  
+  #promoImage{
+    display: flex;
+    border-radius: 5em;
+    transition: 0.5s;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #promoImage:hover{
+    transform: scale(1.01) translateY(-15px);
+  }
+  
+  
